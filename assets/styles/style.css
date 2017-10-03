@@ -78,6 +78,9 @@ body {
   display: flex;
   justify-content: center;
 }
+#current-series-title {
+  text-align: center;
+}
 
 /*PHOTOS PAGE*/
 .photo-card {

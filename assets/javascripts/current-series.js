@@ -1,13 +1,18 @@
 $(document).ready(()=>{
-  let rows = '23:27'
+  let rows = '22:27'
   $.get(url + id + prefix + rows + key)
     .then(data=>data.values)
     .then(data => {
-      let dates = data[0];
-      let titles = data[1];
-      let sermonLinks = data[2];
-      let scriptures = data[3];
-      let scriptureLinks = data[4];
+      let dates = data[1];
+      let titles = data[2];
+      let sermonLinks = data[3];
+      let scriptures = data[4];
+      let scriptureLinks = data[5];
+      $('#current-series-title').append(`
+        <h3>${data[0][1]}</h3>
+        <p>${data[0][2]}</p>
+        <img src="assets/images/current-series-image.jpg" alt="">
+        `)
       dates.forEach((e,i) => {
       if (i!=0) {
         if (scriptureLinks[i] != "") {
@@ -15,7 +20,7 @@ $(document).ready(()=>{
             <tr>
               <td>${e}</td>
               <td><a href="${sermonLinks[i]}">${titles[i]}</a></td>
-              <td><a href=${scriptureLinks[i]}>${scriptures[i]}</a></td>
+              <td><a class="rtBibleRef" href="${scriptureLinks[i]}" data-reference="${scriptures[i]}" data-version="niv" data-purpose="bible-reference" target="_blank">${scriptures[i]}</a></td>
             </tr>
             `)
         } else {
