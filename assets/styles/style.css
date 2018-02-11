@@ -207,7 +207,7 @@ body {
 
 .pastor-main h2{
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
@@ -215,7 +215,7 @@ body {
 .pastor-main {
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid gray;
 }
 
 .staff-secretary h2 {
@@ -223,10 +223,16 @@ body {
 }
 
 .secretary-note {
-  border: 1px solid black;
+  border: 1px solid gray;
   padding: 20px;
   margin-bottom: 20px;
 }
+
+.secretary-note i {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
 .brian-profile-photo {
   float: left;
   margin: 0 20px 20px 0;
