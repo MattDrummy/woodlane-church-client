@@ -58,7 +58,6 @@ body {
 }
 
 
-
 /*CALENDAR PAGE*/
 
 .calendar {
@@ -198,13 +197,42 @@ body {
 .staff-main {
   display: flex;
   font-size: 1.3em;
-  height: 600px;
 }
 
 .staff-main div:last-child {
   border-left: 1px solid gray;
   padding-left: 2em;
 }
+
+
+.pastor-main h2{
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.pastor-main {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.staff-secretary h2 {
+  text-align: center;
+}
+
+.secretary-note {
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.brian-profile-photo {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+
 /*FOOTER*/
 
 footer {
