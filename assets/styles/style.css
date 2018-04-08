@@ -248,3 +248,15 @@ footer {
   background-color: var(--panel-color);
   padding: 1em;
 }
+
+/*TRAINING*/
+
+.training {
+  margin: 2em;
+}
+
+.training main {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 100%;
+  width: 100%;
+}
