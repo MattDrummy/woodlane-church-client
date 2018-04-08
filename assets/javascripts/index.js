@@ -24,7 +24,3 @@ $(document).ready(()=>{
     }, 3000)
   })
 })
-
-$('#index-expect-link').click(()=>{
-  location.href = '/faq.html';
-})
